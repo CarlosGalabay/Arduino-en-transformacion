@@ -141,22 +141,22 @@ with mp_hands.Hands(
           # Enviar la cantidad de dedos al Arduino
           if (fingers_counter == "1"):
                ser.write("A".encode())
-               print(fingers_counter)
+               #print(fingers_counter)
           elif (fingers_counter == "2"):
                ser.write("B".encode())
-               print(fingers_counter)
+               #print(fingers_counter)
           elif (fingers_counter == "3"):
                ser.write("C".encode())
-               print(fingers_counter)
+               #print(fingers_counter)
           elif (fingers_counter == "4"):
                ser.write("D".encode())
-               print(fingers_counter)
+               #print(fingers_counter)
           elif (fingers_counter == "5"):
                ser.write("E".encode())
-               print(fingers_counter)
+               #print(fingers_counter)
           else:
                ser.write("F".encode())
-               print(fingers_counter)
+               #print(fingers_counter)
 
 
           cv2.imshow("Frame", frame)
